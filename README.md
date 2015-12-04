@@ -1,1 +1,2 @@
-# gm_portfolio
+# Garrett Milojevich's Portfolio
+> A very customized tumblr portfolio.
