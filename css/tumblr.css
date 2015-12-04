@@ -1,0 +1,154 @@
+/* first for IE 4â€“8 */
+@font-face {
+  font-family: DINWebPro;
+  src: url("https://static.tumblr.com/rb250d7/elpnyswe8/dinweb.eot");
+  font-weight: normal;
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: DINWebPro;
+  src: url("https://static.tumblr.com/rb250d7/Odsnysweb/dinweb.woff") format("woff");
+  font-weight: normal;
+}
+
+/* first for IE 4â€“8 */
+@font-face {
+  font-family: DINWebPro;
+  src: url("https://static.tumblr.com/rb250d7/Xq5nyswce/dinweb-bold.eot");
+  font-weight: bold;
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: DINWebPro;
+  src: url("https://static.tumblr.com/rb250d7/jGPnyswcm/dinweb-bold.woff") format("woff");
+  font-weight: bold;
+}
+
+/* first for IE 4â€“8 */
+@font-face {
+  font-family: DINWebProItalic;
+  src: url("https://static.tumblr.com/rb250d7/gzRnyswd0/dinweb-ita.eot");
+  font-weight: normal;
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: DINWebProItalic;
+  src: url("https://static.tumblr.com/rb250d7/4SFnyswd3/dinweb-ita.woff") format("woff");
+  font-weight: normal;
+}
+
+/* first for IE 4â€“8 */
+@font-face {
+  font-family: DINWebProBoldItalic;
+  src: url("https://static.tumblr.com/rb250d7/7kFnyswcv/dinweb-boldita.eot");
+  font-weight: bold;
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: DINWebProBoldItalic;
+  src: url("https://static.tumblr.com/rb250d7/GFznyswcr/dinweb-boldita.woff") format("woff");
+  font-weight: bold;
+}
+
+/* Colors */
+body {
+    background: {BackgroundColor};
+    font-family: DINWebPro, {TitleFont}, "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+}
+
+.blog-title {
+    font-family: DINWebPro, {TitleFont}, "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+    font-weight: {TitleFontWeight};
+  	letter-spacing: 0.05em;
+}
+
+.blog-title a,
+.description,
+.search-no-results {
+    color: {TitleColor};
+}
+
+a {
+    color: {AccentColor};
+    font-weight: bold;
+  	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.caption {
+	letter-spacing: 0.05em;
+}
+
+#pagination a,
+.nav-wrapper .nav-item .label {
+    color: {AccentColor};
+}
+
+#pagination a.next:after {
+    border-left-color: {AccentColor};
+}
+
+#pagination a.previous:after {
+    border-right-color: {AccentColor};
+}
+
+.loader .loader-bar {
+    background-color: {TitleColor};
+}
+
+.header-image.cover {
+    background-image: url({HeaderImage});
+}
+
+.user-avatar {
+    background-color: {BackgroundColor};
+    border-color: {BackgroundColor};
+}
+
+.avatar-style-square .user-avatar {
+    -webkit-box-shadow: 0 0 0 4px {BackgroundColor};
+    box-shadow: 0 0 0 4px {BackgroundColor};
+}
+
+.no-header-image .logo-wrapper,
+.contain-header-image .logo-wrapper {
+    color: {AccentColor};
+}
+
+/* Adjust logo for light accents on light backgrounds */
+.light-on-light.no-header-image .logo-wrapper,
+.light-on-light.contain-header-image .logo-wrapper {
+    color: #444;
+}
+
+/* Adjust logo for dark accents on dark backgrounds */
+.dark-on-dark.no-header-image .logo-wrapper,
+.dark-on-dark.contain-header-image .logo-wrapper {
+    color: #fff;
+}
+
+.related-posts-wrapper > h2 {
+    color: {TitleColor};
+}
+
+@media screen and (max-device-width: 568px) {
+    .header-image.cover {
+        background-image: url({HeaderImage-640});
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    .avatar-style-square .user-avatar {
+        -webkit-box-shadow: 0 0 0 3px {BackgroundColor};
+        -moz-box-shadow: 0 0 0 3px {BackgroundColor};
+        box-shadow: 0 0 0 3px {BackgroundColor};
+    }
+
+}
